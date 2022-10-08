@@ -1,0 +1,15 @@
+<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_0_8)">
+<circle cx="27" cy="27" r="27" fill="black" fill-opacity="0.2"/>
+<circle cx="27" cy="27" r="26.75" stroke="white" stroke-width="0.5"/>
+</g>
+<path d="M42 27L19 11V43L42 27Z" fill="white"/>
+<defs>
+<filter id="filter0_b_0_8" x="-1" y="-1" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="0.5"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_8"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_8" result="shape"/>
+</filter>
+</defs>
+</svg>

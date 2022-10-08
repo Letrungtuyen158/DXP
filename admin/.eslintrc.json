@@ -1,0 +1,12 @@
+{
+  "extends": "next",
+  "plugins": ["unused-imports", "sort-imports-es6-autofix"],
+  "rules": {
+    "unused-imports/no-unused-imports": 2,
+    "unused-imports/no-unused-vars": 2,
+    "no-console": 1,
+    "sort-imports-es6-autofix/sort-imports-es6": 2,
+    "jsx-a11y/alt-text": 2,
+    "react-hooks/exhaustive-deps": 0
+  }
+}

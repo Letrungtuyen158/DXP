@@ -1,0 +1,18 @@
+export const ROUTERS = {
+  HOME: "/",
+  ABOUT_ME: "/ve-toi",
+  COURSES: "/khoa-hoc",
+  SHARE: "/chia-se",
+  COURSE_DETAIL: "/khoa-hoc",
+  VIEW: "/goc-nhin",
+  VIEW_DETAIL: "/goc-nhin",
+  CONTACT: "/lien-he",
+  ADMIN: "/admin",
+  GALLERY_PHOTOS: "/gallery/photos",
+  GALLERY_VIDEOS: "/gallery/videos",
+  GOTO_DETAIL_SHARING: "/chia-se",
+  API_CAROUSEL_POST: "/api/Carousel-post",
+  API_SHARING_LIST_FEATURED_1: "/api/sharing/Featured-Posts",
+  API_SHARING_LIST_NEWS_POST: "/api/sharing/news-post",
+  API_SHARING_LIST_FEATURED_2: "/api/sharing/Featured-Post-2",
+};

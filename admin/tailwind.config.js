@@ -1,0 +1,40 @@
+module.exports = {
+  content: ["./components/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    boxShadow: {
+      "3xl": "0px 2px 4px rgba(0, 0, 0, 0.25);",
+      sm: "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+    },
+    colors: {
+      white: "#ffffff",
+      black: "#000000",
+      darkbluebg: "#222941",
+      bluebtn: "#0092FF",
+      yellow100: "#FED500",
+      green100: "#539642",
+      graydivide: "#F1F3F5",
+      gray200: "#E2E2E2",
+      gray300: "#C4C4C4",
+      gray400: "#E5E5E5",
+      gray500: "#E8E8E8",
+      gray600: "#7E8197",
+      redbg: "#DF2121",
+      orange100: "#FFA800",
+      pink100: "#FC6565",
+      usercolor: "#4573C6",
+      bluenextbtn: "#209DD8",
+      red100: "#d6000b",
+      gray999: "#999999",
+      grayborder: "#F2F2F2",
+      buttonsubmit: "#FC6565",
+      red600: "#ff0000",
+    },
+    extend: {},
+  },
+  plugins: [
+    require("tailwindcss"),
+    require("autoprefixer"),
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/aspect-ratio"), // https://tailwindcss.com/blog/multi-line-truncation-with-tailwindcss-line-clamp
+  ],
+};

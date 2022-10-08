@@ -1,0 +1,55 @@
+{
+  "name": "landing-page",
+  "private": true,
+  "scripts": {
+    "lint": "cd guest && next lint --fix && cd .. && cd admin && next lint --fix",
+    "type-check": "tsc --project guest/tsconfig.json --pretty --noEmit && tsc --project admin/tsconfig.json --pretty --noEmit",
+    "postinstall": "husky install"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^12.1.4",
+    "moment": "2.29.1",
+    "next": "12.0.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sharp": "^0.30.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "15.0.0",
+    "@commitlint/config-conventional": "15.0.0",
+    "@types/react": "^17.0.43",
+    "autoprefixer": "10.4.0",
+    "eslint": "7",
+    "eslint-config-next": "12.0.4",
+    "eslint-config-prettier": "8.3.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.1.2",
+    "prettier": "2.5.0",
+    "typescript": "4.5.2"
+  },
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "google",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "require-jsdoc": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}

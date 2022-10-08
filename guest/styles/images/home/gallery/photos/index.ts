@@ -1,0 +1,23 @@
+const Images = {
+  img1: require("./photo1.png"),
+  img2: require("./photo2.png"),
+  img3: require("./photo3.png"),
+  img4: require("./photo4.png"),
+  img5: require("./photo5.png"),
+  img6: require("./photo6.png"),
+  img7: require("./photo7.png"),
+  img8: require("./photo8.png"),
+  img9: require("./photo9.png"),
+  img10: require("./photo10.png"),
+  img11: require("./photo11.png"),
+  img12: require("./photo12.png"),
+  img13: require("./photo13.png"),
+  img14: require("./photo14.png"),
+  img15: require("./photo15.png"),
+  img16: require("./photo16.png"),
+  img17: require("./photo17.png"),
+  img18: require("./photo18.png"),
+  img19: require("./photo18.png"),
+  img20: require("./photo19.png"),
+};
+export default Images;

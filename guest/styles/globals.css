@@ -1,0 +1,324 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "San Francisco Display";
+  src: url("/fonts/Gilroy/SanFranciscoDisplay-Regular.otf");
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 
+@font-face {
+    font-family: "Simplesnails ver 4.0";
+    src: url("/fonts/Gilroy/Simplesnails_ver_4_0.ttf");
+}
+
+@font-face {
+    font-family: "Signatie";
+    src: url("/fonts/Gilroy/Signatie.ttf");
+} */
+
+/* @font-face {
+  font-family: "San Francisco Display";
+  src: url("/fonts/Gilroy/SanFranciscoDisplay-Light.otf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "San Francisco Display";
+  src: url("/fonts/Gilroy/SanFranciscoDisplay-Light.otf");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+} */
+
+/* 
+@font-face {
+  font-family: "San Francisco Display";
+  src: url("/fonts/Gilroy/SanFranciscoDisplay-Light.otf.otf-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'vavo', sans-serif !important; */
+  font-family: "San Francisco Display", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ytp-watermark {
+  display: none;
+}
+
+.text-normal {
+  @apply leading-[22px] font-normal text-[20px];
+}
+
+.text-normal-mobile {
+  @apply leading-[18px] font-normal text-[18px];
+}
+
+@layer base {
+  h2 {
+    color: #333333;
+  }
+
+  h3 {
+    font-family: "San Francisco Display", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42.75px;
+    line-height: 45px;
+    color: #333333;
+  }
+
+  h4 {
+    color: #333333;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    color: #333333;
+  }
+
+  .fontSv4 {
+    font-family: "Simplesnails ver 4.0", sans-serif;
+  }
+
+  /* .fontSignatie {
+    font-family: "Signatie", sans-serif;
+  } */
+  span {
+    font-family: "San Francisco Display", sans-serif;
+  }
+
+  p {
+    font-family: "San Francisco Display", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+  }
+
+  a {
+    font-family: "San Francisco Display", sans-serif;
+    font-style: normal;
+    line-height: 22px;
+    color: #333333;
+    cursor: pointer;
+  }
+
+  a:hover {
+    font-weight: 600;
+  }
+
+  button {
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 640px) {
+    h1 {}
+
+    h2 {}
+
+    h3 {}
+
+    h4 {}
+
+    h5 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 25px;
+    }
+
+    span {}
+
+    .container-news {
+      padding-bottom: 50px !important;
+      margin: 0 -25px !important;
+    }
+
+    .dot-list-news {
+      bottom: 0 !important;
+    }
+
+    .review_container {
+      margin: 0 -8px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container-news {
+      margin: 0 -15px !important;
+    }
+
+    .dot-list-news {
+      display: none !important;
+    }
+
+    .review_container {
+      margin: 0 -8px !important;
+    }
+  }
+}
+
+@layer components {
+  .center {
+    @apply flex items-center justify-center;
+  }
+}
+
+.react-multi-carousel-dot-list {
+  bottom: -48px !important;
+}
+
+.react-multi-carousel-dot {
+  margin: 0 3px 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.react-multi-carousel-dot button {
+  border: 1px solid #f9f9f9 !important;
+  background: #d7dad6 !important;
+  width: 9px !important;
+  height: 9px !important;
+  margin: 0 !important;
+}
+
+.react-multi-carousel-dot--active button {
+  background: #1b3f23 !important;
+  border: 1px solid #dfe2df !important;
+}
+
+.react-multiple-carousel__arrow {
+  z-index: 1 !important;
+  background-color: #f8f8f8 !important;
+}
+
+.react-multiple-carousel__arrow::before {
+  color: rgba(0.35, 0.35, 0.35, 1) !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 2px !important;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 2px !important;
+}
+
+.img-customize {
+  display: block;
+  margin: 0 3px;
+  border-radius: 3.57px;
+  overflow: hidden;
+}
+
+.hide-toolbar .ql-toolbar {
+  padding: 0 !important;
+  border-bottom: hidden !important;
+  border: none !important;
+}
+
+.hide-toolbar .ql-toolbar>span {
+  display: none !important;
+}
+
+.hide-toolbar .ql-container {
+  border: none !important;
+}
+
+.hide-toolbar .ql-editor {
+  padding: 0 !important;
+}
+
+.react-multiple-carousel__arrow {
+  z-index: 10 !important;
+}
+
+.dot-list-news {
+  bottom: 0 !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.ql-tooltip,
+.ql-hidden,
+.ql-clipboard {
+  display: none;
+}
+
+.font-size-reactQuill p {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.font-size-reactQuill h1 {
+  line-height: 28px;
+  font-size: 20px;
+}
+
+.font-size-reactQuill h2 {
+  line-height: 26px;
+  font-size: 20px;
+}
+
+.quill-text18px p {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left !important;
+}
+
+
+.quill-text20px p {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.quill-text15px p {
+  font-size: 15px;
+  line-height: 19px;
+}
+
+@media only screen and (min-width: 769px) {
+  .dotlistCarosel {
+    bottom: 55px !important;
+  }
+
+  .containerCarosel {
+    padding-top: 115px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dotlistCarosel {
+    bottom: 30px !important;
+  }
+
+  .containerCarosel {
+    padding-top: 40px;
+  }
+}
+
+.ql-container .ql-editor p img {
+  display: unset !important;
+}
